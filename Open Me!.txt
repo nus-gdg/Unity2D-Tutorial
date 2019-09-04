@@ -100,6 +100,18 @@ want to spawn enemies repeatedly.
 This scene is currently incomplete, and we will do a few things to
 make it closer to a real game.
 
+0. Adding your own script
+
+Right now, the player doesn't really do anything. It just stands there,
+lifeless.
+
+Let's change it so that we can take control of it!
+
+- Movement control script
+
+We want to make it fire too!
+
+Shooting control script
 
 1. Completing fields in Scripts
 If you look at "Stubby" in the Inspector, you should see that he has
@@ -118,25 +130,56 @@ Now, if we start the game, we will see that a "Pellet" will be
 cloned and fired from "Stubby" towards the direction of the our
 left click.
 
+1.5 Facing the mouse
+
+But isn't it weird that Stubby keeps pointing upwards? We should
+make it always face the mouse cursor instead
+
+- Face Mouse script
+
+1.6 Enemies
+
+By now, you might have noticed the "Jeff" GameObject that does
+nothing while sitting on the Screen. Jeff is intended to be an enemy,
+so let's make it one!
+
+Attach the enemy script to Jeff.
+
+It's not working! Even when bullets hit Jeff, nothing happens!
+
+Why do you think this is the case? Hint: Scene2 Tutorial
+
+Let's add an appropriate Collider to Jeff. Now, let's run the game and...
+what's going on? It's like Jeff has some sort of shield preventing the
+bullets from touching him.
+
+Why? Hint: Scene4 Tutorial
+
+Now let's make it a trigger. Now, we can see that it's working and that
+Jeff will die after 3 hits.
+
+But wait! Sometimes, when the bullets haven't hit Jeff yet, or look like they
+will miss, Jeff still takes damage or dies! We should fix this by reducing
+the collider.
 
 2. Attaching Scripts
-By now, you might have noticed the "Jeff" GameObject that does
-nothing while sitting on the Screen. We want to make "Jeff" follow
-the Player around.
+We want to make "Jeff" follow the Player around.
 
 In order to do this, let's attach a Script to "Jeff" that specifies
 this behaviour. Luckily, such a Script already exists. Click on
 "Jeff" to bring him up in the Inspector. Now, either:
-A) Click "Add Component" and type in "Jeff Script". This will search
-   for the "Jeff Script" Component in our Project. Press enter, and
-   the "Jeff Script" Component should have been added to "Jeff".
+A) Click "Add Component" and type in "Follow". This will search
+   for the "Follow Object" Component in our Project. Press enter, and
+   the "Follow Object" Component should have been added to "Jeff".
 B) Open the "Project" window and open the "Scripts" folder. There
-   should be a Script titled "Jeff Script". Drag this onto "Jeff" in
+   should be a Script titled "Follow Object". Drag this onto "Jeff" in
    the Inspector window.
 
+We need to choose who to follow, so let's set the Object To Follow to 
+Stubby
+
 Now, if we Play the Scene, "Jeff" should have begun following
-"Stubby" around. Moreover, "Jeff" should take damage if hit by a
-bullet.
+"Stubby" around.
 
  
 3. Creating our own Prefabs
@@ -163,6 +206,21 @@ before.
 
 Now, the game will proceed indefinitely, and new "Jeff"s can be
 endlessly spawned.
+
+4. (If time allows) Particle system
+
+We can add a particle system to the main character so that an effect
+will play whenever we shoot!
+
+GameObject -> Effects -> Particle System
+
+Handle rotation in 3D space
+
+Make it a child object of the player
+
+Set to world co-ordinates
+
+Attach to script
 
 ____________________________________________________________________
 

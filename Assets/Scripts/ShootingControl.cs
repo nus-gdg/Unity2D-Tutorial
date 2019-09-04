@@ -7,6 +7,7 @@ public class ShootingControl : MonoBehaviour
     public GameObject bullet;
 
     public float cooldown = 0.5f;
+    public ParticleSystem additionalEffect;
     private bool readyToShoot;
 
     private Transform playerTransform;
@@ -42,6 +43,11 @@ public class ShootingControl : MonoBehaviour
             clone.Push(playerCoordinates, mouseCoordinates);
 
             StartCoroutine("CooldownRoutine");
+
+            if(additionalEffect != null) 
+            {
+                additionalEffect.Play();
+            }
         }
     }
 
