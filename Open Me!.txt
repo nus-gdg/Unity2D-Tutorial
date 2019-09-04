@@ -100,7 +100,7 @@ want to spawn enemies repeatedly.
 This scene is currently incomplete, and we will do a few things to
 make it closer to a real game.
 
-0. Adding your own script
+1. Adding your own script
 
 Right now, the player doesn't really do anything. It just stands there,
 lifeless.
@@ -113,7 +113,7 @@ We want to make it fire too!
 
 Shooting control script
 
-1. Completing fields in Scripts
+2. Completing fields in Scripts
 If you look at "Stubby" in the Inspector, you should see that he has
 two Scripts attached, "Movement Control" and "Shooting Control".
 Right now, the "Bullet" field in Stubby's "Shooting Control" Script
@@ -130,14 +130,14 @@ Now, if we start the game, we will see that a "Pellet" will be
 cloned and fired from "Stubby" towards the direction of the our
 left click.
 
-1.5 Facing the mouse
+3. Facing the mouse
 
 But isn't it weird that Stubby keeps pointing upwards? We should
 make it always face the mouse cursor instead
 
 - Face Mouse script
 
-1.6 Enemies
+4. Enemies
 
 By now, you might have noticed the "Jeff" GameObject that does
 nothing while sitting on the Screen. Jeff is intended to be an enemy,
@@ -162,7 +162,7 @@ But wait! Sometimes, when the bullets haven't hit Jeff yet, or look like they
 will miss, Jeff still takes damage or dies! We should fix this by reducing
 the collider.
 
-2. Attaching Scripts
+5. Attaching Scripts
 We want to make "Jeff" follow the Player around.
 
 In order to do this, let's attach a Script to "Jeff" that specifies
@@ -182,7 +182,7 @@ Now, if we Play the Scene, "Jeff" should have begun following
 "Stubby" around.
 
  
-3. Creating our own Prefabs
+6. Creating our own Prefabs
 Imagine, that rather than having a single "Jeff" follow "Stubby"
 around, we can have multiple "Jeff"s on-screen doing the same thing.
 Now, we'll try to make an "EnemySpawner" object to accomplish this.
@@ -207,7 +207,7 @@ before.
 Now, the game will proceed indefinitely, and new "Jeff"s can be
 endlessly spawned.
 
-4. (If time allows) Particle system
+7. (If time allows) Particle system
 
 We can add a particle system to the main character so that an effect
 will play whenever we shoot!
