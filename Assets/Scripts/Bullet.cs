@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour {
     public float bulletSpeed = 7.5f;
+    public int damage = 1;
     
     public void Push(Vector2 startCoordinates, Vector2 endCoordinates)
     {
