@@ -130,10 +130,8 @@ GameObject:
   m_Component:
   - component: {fileID: 275225463}
   - component: {fileID: 275225462}
-  - component: {fileID: 275225465}
   - component: {fileID: 275225467}
   - component: {fileID: 275225464}
-  - component: {fileID: 275225466}
   m_Layer: 9
   m_Name: Stubby
   m_TagString: Untagged
@@ -204,24 +202,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &275225464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275225461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cba61af001010e4b855519bfec3f373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upButton: 119
-  leftButton: 97
-  downButton: 115
-  rightButton: 100
-  movementSpeed: 5
---- !u!50 &275225465
+--- !u!50 &275225464
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -242,20 +223,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &275225466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275225461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ed35c9cf05d67f4b91950e57f18df66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  cooldown: 0.5
 --- !u!61 &275225467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -734,7 +701,6 @@ GameObject:
   - component: {fileID: 1951985616}
   - component: {fileID: 1951985615}
   - component: {fileID: 1951985617}
-  - component: {fileID: 1951985619}
   m_Layer: 0
   m_Name: Jeff
   m_TagString: Untagged
@@ -826,19 +792,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &1951985619
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951985614}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.055165686, y: -0.03357142}
-  m_Size: {x: 0.3028058, y: 0.2599376}
-  m_Direction: 1
