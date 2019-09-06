@@ -150,14 +150,11 @@ In order to do this, let's attach a Script to "Jeff" that specifies
 this behaviour. Luckily, such a Script already exists. Click on
 "Jeff" to bring him up in the Inspector. Now, either:
 A) Click "Add Component" and type in "Follow". This will search
-   for the "Follow Object" Component in our Project. Press enter, and
-   the "Follow Object" Component should have been added to "Jeff".
+   for the "Follow Stubby" Component in our Project. Press enter, and
+   the "Follow Stubby" Component should have been added to "Jeff".
 B) Open the "Project" window and open the "Scripts" folder. There
-   should be a Script titled "Follow Object". Drag this onto "Jeff" in
+   should be a Script titled "Follow Stubby". Drag this onto "Jeff" in
    the Inspector window.
-
-We need to choose who to follow, so let's set the Object To Follow to 
-Stubby
 
 Now, if we Play the Scene, "Jeff" should have begun following
 "Stubby" around.
