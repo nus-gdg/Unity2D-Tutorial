@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowObject : MonoBehaviour
+public class FollowStubby : MonoBehaviour
 {
     public float movementSpeed = 3.0f;
-    public GameObject objectToFollow;
 
     private Transform objectTransform;
     private Transform jeffTransform;
@@ -14,7 +13,7 @@ public class FollowObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objectTransform = objectToFollow.transform;
+        objectTransform = GameObject.Find("Stubby").transform;
         
         GameObject go = this.gameObject;
         jeffTransform = go.transform;

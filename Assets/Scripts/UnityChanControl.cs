@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerMovement : MonoBehaviour
+public class UnityChanControl : MonoBehaviour
 {
     public KeyCode right;
     public KeyCode left;
