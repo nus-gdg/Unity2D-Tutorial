@@ -50,9 +50,9 @@ the Physics of a GameObject.
 In this Scene, the two "Unity-Chan" GameObjects have a Script
 attached that allows you to move them in Play mode.
 
-The default controls are as follows:
-D     - Right
-A     - Left
+The default controls are as follows: </br>
+D     - Right</br>
+A     - Left</br>
 Space - Jump
 
 Similar capabilities are useful for a multitude of games, such as
